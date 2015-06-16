@@ -1,5 +1,6 @@
 # Makefile for Blue Waters
 # Author: Aaron Weeden, Shodor, May 2015
+# Modified By: Felipe Gutierrez, June 2015
 
 PREFIX=pi
 LIBS=-lm
