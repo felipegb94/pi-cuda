@@ -7,3 +7,7 @@ pi-cuda-2
 .ptp-sync/config
 .ptp-sync/info/exclude
 .settings/org.eclipse.ptp.rdt.sync.core.prefs
+/Debug
+/.ptp-sync
+org.eclipse.cdt.managedbuilder.core.prefs
+.nfs00000000010cd97200000010
