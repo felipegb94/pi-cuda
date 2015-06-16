@@ -22,6 +22,7 @@ int main(int argc, char **argv) {
   double area = 0.0;
 
   printf("helloworld\n");
+  printf("second\n");
   //getUserOptions(argc, argv, &numRects);
 
   //calculateArea(numRects, &area);
