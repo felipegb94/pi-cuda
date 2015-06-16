@@ -4,11 +4,11 @@
 PREFIX=pi
 LIBS=-lm
 
-CC=CC
-
+GCC=gcc
+GPP=g++
 # CUDA
 CUDA_CC=nvcc
-CUDA_CFLAGS=-arch sm_13
+CUDA_CFLAGS=-arch sm_20
 EXECUTABLES+=$(PREFIX)-cuda-1
 EXECUTABLES+=$(PREFIX)-cuda-2
 
@@ -17,11 +17,11 @@ all:
 
 # EXPENDABLES
 $(PREFIX)-io.o: $(PREFIX)-io.c $(PREFIX)-io.h
-	$(CC) $(CFLAGS) -c $(PREFIX)-io.c $(LIBS)
+	$(GCC) $(CFLAGS) -o $@ -c $(PREFIX)-io.c $(LIBS)
 EXPENDABLES+=$(PREFIX)-io.o
 
 $(PREFIX)-calc.o: $(PREFIX)-calc.c $(PREFIX)-calc.h
-	$(CC) $(CFLAGS) -c $(PREFIX)-calc.c $(LIBS)
+	$(GCC) $(CFLAGS) -c $(PREFIX)-calc.c $(LIBS)
 EXPENDABLES+=$(PREFIX)-calc.o
 
 $(PREFIX)-cuda-1.o: $(PREFIX)-cuda-1.cu
@@ -34,10 +34,10 @@ EXPENDABLES+=$(PREFIX)-cuda-2.o
 
 # EXECUTABLES
 $(PREFIX)-cuda-1: $(PREFIX)-cuda-1.o $(PREFIX)-io.o $(PREFIX)-cuda.cpp
-	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
+	$(CUDA_CC) $(CUDA_CFLAGS) -o $@ $^ $(LIBS)
 
 $(PREFIX)-cuda-2: $(PREFIX)-cuda-2.o $(PREFIX)-io.o $(PREFIX)-cuda.cpp
-	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
+	$(CUDA_CC) $(CUDA_CFLAGS) -o $@ $^ $(LIBS)
 
 # CLEAN
 clean:
