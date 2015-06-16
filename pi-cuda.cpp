@@ -21,11 +21,12 @@ int main(int argc, char **argv) {
   int numRects = 10;
   double area = 0.0;
 
-  getUserOptions(argc, argv, &numRects);
+  printf("helloworld\n");
+  //getUserOptions(argc, argv, &numRects);
 
-  calculateArea(numRects, &area);
+  //calculateArea(numRects, &area);
 
-  calculateAndPrintPi(area);
+  //calculateAndPrintPi(area);
 
   return 0;
 }
