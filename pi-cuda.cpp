@@ -18,7 +18,7 @@
  * FUNCTION DEFINITIONS *
  ************************/
 int main(int argc, char **argv) {
-  int numRects = 10;
+  int numRects = 20;
   double area = 0.0;
 
   printf("helloworld\n");
