@@ -1,0 +1,6 @@
+.cproject
+.project
+.ptp-sync/HEAD
+.ptp-sync/config
+.ptp-sync/info/exclude
+.settings/org.eclipse.ptp.rdt.sync.core.prefs
