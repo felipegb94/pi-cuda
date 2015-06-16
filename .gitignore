@@ -1,3 +1,6 @@
+pi-cuda-1
+pi-cuda-2
+*.o
 .cproject
 .project
 .ptp-sync/HEAD
