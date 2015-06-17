@@ -23,6 +23,9 @@ int main(int argc, char **argv) {
 
   printf("helloworld\n");
   printf("second\n");
+
+  printf("third\n");
+
   //getUserOptions(argc, argv, &numRects);
 
   //calculateArea(numRects, &area);
