@@ -10,8 +10,8 @@
 /*************
  * LIBRARIES *
  *************/
-#include "pi-io.h" /* getUserOptions(), calculateAndPrintPi() */
-#include "pi-calc-cuda.h" /* calculateArea() */
+//#include "pi-io.h" /* getUserOptions(), calculateAndPrintPi() */
+//#include "pi-calc-cuda.h" /* calculateArea() */
 #include <stdio.h>
 
 /************************
