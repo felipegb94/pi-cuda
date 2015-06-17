@@ -27,6 +27,7 @@ int main(int argc, char **argv) {
   printf("third\n");
   printf("second\n");
   printf("second\n");
+  printf("second\n");
 
   //getUserOptions(argc, argv, &numRects);
 
